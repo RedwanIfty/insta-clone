@@ -1,5 +1,5 @@
 import { Box, Container, Flex, Image, VStack } from '@chakra-ui/react'
-import React from 'react'
+// import React, { useState } from 'react'
 import AuthForm from '../../components/AuthForm/AuthForm'
 
 function AuthPage() {
@@ -9,7 +9,7 @@ function AuthPage() {
             <Flex justifyContent={"center"} alignItems={"center"} gap={10}>
                 {/* Left hand side */}
                 <Box display={{base:"none",md:"block"}}>
-                    <Image src="/auth.png" h={550} alt='phone image'/>
+                   <Image src="/auth.png" h={550} alt='phone image'/>
                 </Box>
                 {/*Right Hand side */}
                 <VStack spacing={4} align={"stretch"}>
