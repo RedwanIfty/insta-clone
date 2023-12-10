@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Box, VStack,Image, Input, Button, Flex,Text } from '@chakra-ui/react'
+import { Link } from 'react-router-dom';
 const AuthForm=()=> {
     const [isLogin,setIsLogin]=useState(true);
   return (
@@ -28,8 +29,8 @@ const AuthForm=()=> {
         </Flex>
         <Flex alignItems={"center"} justifyContent={"center"} cursor={"pointer"}>
           <Image src='/google.png' w={5} alt='Google Logo'/>
-          <Text mx={2} color={"blue.500"}>
-            Log in with Google
+          <Text mx={1} color={"blue.500"}>
+            <Link to='/'>Log in with Google</Link>
           </Text>
         </Flex>
     </VStack>

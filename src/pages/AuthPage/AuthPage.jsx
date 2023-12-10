@@ -2,7 +2,7 @@ import { Box, Container, Flex, Image, VStack } from '@chakra-ui/react'
 // import React, { useState } from 'react'
 import AuthForm from '../../components/AuthForm/AuthForm'
 
-function AuthPage() {
+const AuthPage=()=> {
   return (
     <Flex minH={"100vh"} justifyContent={"center"} alignItems={"center"} px={4}>
         <Container maxH={"container.md"} padding={0}>
