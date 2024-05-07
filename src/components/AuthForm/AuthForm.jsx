@@ -65,12 +65,13 @@ const AuthForm = () => {
           </Flex>
         </VStack>
       </Box>
-      <Box border="1px solid gray" borderRadius={4} padding={5}>
-        <Flex alignItems="center" justifyContent="center" flexDirection="column">
-          <Text>
-            {isLogin ? "Don't have an account?" : 'Already have an account?'}
-          </Text>
-          <Text
+      <Box border={"1px solid gray"} borderRadius={4} padding={5}>
+        <Flex alignItems={"center"} justifyContent="center" flexDirection="column">
+        <Box max={2} fontSize={14}>
+          {isLogin ? "Don't have an account?" : 'Already have an account?'}
+        
+        </Box>  
+           <Text
             onClick={() => setIsLogin(!isLogin)}
             color="blue.500"
             cursor="pointer"
